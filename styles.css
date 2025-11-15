@@ -8,6 +8,9 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    /* background-image:url('images/bk5.jpg');
+    background-size:cover; */
+ 
 }
 /* note盒子 */
 .note {
@@ -38,6 +41,7 @@ body {
     background-color: red;
     border-radius: 50%;
     margin: 10px 5px;
+   
 }
 .notetext{
     padding: 5px 10px; 
@@ -49,7 +53,7 @@ ul{
     margin-left: 30px;
 }
 li{
-    font-family:serif;
+   
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -125,5 +129,34 @@ li{
     top: 50%;
     transform: translateY(-50%);
 }
+/* 骰子 */
+.dice-cont{
+   
+    margin-top: 50px;
+}
+.dice-button {
+    width: 50px;  
+    cursor: pointer;  /* 使其可点击 */
+    transition: transform 0.3s ease;  /* 添加平滑过渡效果 */
+}
+.dice-button:active{
+    transform: scale(0.9);
+}
+.dice-result {
+    margin-top: 20px;
+}
 
-/* 如果需要更多效果，可以在 JS 文件里增加交互 */
+.dice-num {
+    font-size: 30px;
+    margin: 0 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.dice-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
