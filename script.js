@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     } 
 });
+// 音频默认音量30%
+const audio=document.getElementById('audio');
+audio.volume = 0.3;
+// 音频播放添加旋转图片动作
+
+const albumimage=document.getElementById('albumimage');
+audio.addEventListener('play', () => {
+            albumimage.classList.add('rotate'); 
+            albumimage.style.animationPlayState = 'running'; // 保持动画继续播放
+        }); 
+audio.addEventListener('pause',()=>{
+ albumimage.style.animationPlayState = 'paused'; // 暂停动画，但不重置
+});
+

@@ -8,9 +8,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    /* background-image:url('images/bk5.jpg');
-    background-size:cover; */
- 
+    flex-wrap: wrap;
+    /* background-image:url('images/bgp.jpg');
+    background-size:cover;
+  */
 }
 /* note盒子 */
 .note {
@@ -57,9 +58,9 @@ li{
     margin-bottom: 10px;
     font-size: 15px;
 }
-
+/* 头像框 */
 .container {
-     position: absolute;
+     /* position: absolute; */
     top: 10%;  
     display: flex;
     justify-content: center;
@@ -139,13 +140,17 @@ li{
     cursor: pointer;  /* 使其可点击 */
     transition: transform 0.3s ease;  /* 添加平滑过渡效果 */
 }
+.dice-button:hover{
+    transform: scale(1.2);
+}
 .dice-button:active{
     transform: scale(0.9);
 }
+
 .dice-result {
     margin-top: 20px;
 }
-
+/* 点数 */
 .dice-num {
     font-size: 30px;
     margin: 0 15px;
@@ -159,4 +164,23 @@ li{
     margin-top: 20px;
     font-size: 18px;
     font-family: 'Arial', sans-serif;
+}
+/* 音乐盒子 */
+.album-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+/*  */
+.rotate{
+    animation:rotate 15s infinite linear;
+}
+@keyframes rotate{
+    0%{
+    transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
