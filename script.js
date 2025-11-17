@@ -35,4 +35,3 @@ audio.addEventListener('play', () => {
 audio.addEventListener('pause',()=>{
  albumimage.style.animationPlayState = 'paused'; // 暂停动画，但不重置
 });
-
