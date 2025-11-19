@@ -5,58 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>七老师和冷少的世界</title>
     <link rel="stylesheet" href="styles.css"> 
-
+    <link rel="shortcut icon" href="favicon (1).ico">
 </head>
 <body>
+    <div id="welcome-message" class="welcome-message">
+        お帰りなさい～欢迎回来～
+    </div>
     <div class="container">
         <div class="profile left">
             <img src="avatar1.jpg" alt="七老师">
             <div class="text">喜欢七老师</div>
         </div>
-
         <div class="profile right">
             <img src="avatar2.jpg" alt="小绵羊">
             <div class="text">喜欢小绵羊</div>
         </div>
-    </div>      
+    </div>  
+       
+      <!-- 音乐播放器 -->
+    <div class="audio-player">
+        <div class="album-cover">
+            <img src="album2.jpg" alt="" id="albumimage" class="album-image">
+            <span id="textface">(￣▽￣)"</span>
+        </div>
+        <div class="controls">
+            <button id="prev" class="control-btn">⟨ 上一首</button>
+            <button id="playpause" class="play-btn">播放</button>
+            <button id="next" class="control-btn">下一首 ⟩</button>
+        </div>
+        <audio id="audio" src="path/to/audio2.mp3" type="audio/mp3"></audio>
+        <div class="progress-area">
+            <input type="range" id="progress" class="progress-bar" value="0" max="100">
+            <span id="audio-time">(๑˃̵ᴗ˂̵)ﻭ</span>
+        </div>
+        <div class="volume-area">
+            <span>🔊</span>
+            <input type="range" id="volume" class="volume-bar" value="100" max="100">
+        </div>
+    </div>
+
+    <!-- 备忘录 -->
     <div class="note">
         <div class="notea">
             <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"style="background-color: green;"></div>
+            <div class="circle" style="background-color: orange;"></div>
+            <div class="circle" style="background-color: green;"></div>
             <div class="notetext">备忘录</div>
         </div>
         <div class="noteb">
             <ul>
-            <li> 薇薇安的皮肤我用一辈子 我这辈子不会再去赌这个东西</li>
-            <li>我以后一定乘乘的 听阿妍的话</li>
-            <li>在听你的破歌 你去下你的破棋</li>
-            <li>以后出门说你是我弟弟 儿子都行</li>
-             <li>我想要给你织最好的围巾</li>
-        </ul>
+                <li> 薇薇安的皮肤我用一辈子，我这辈子不会再去赌这个东西</li>
+                <li>我以后一定乘乘的，听阿妍的话</li>
+                <li>我想把以前的我拖出来打死</li>
+                <li>抱歉，这是命令不是商量</li>
+            </ul>
+        </div>
     </div>
-    </div>
-    <!-- 摇骰子 -->
-     <div class="dice-cont">
-    <img src="dice.png" alt="骰子" class="dice-button" id="dice-img">
-    <div class="dice-text">
-        喝酒摇骰子🎲
-    </div>
-    <div class="dice-result">
-        <span class="dice-num" id="dice1"></span>
-        <span class="dice-num" id="dice2"></span>
-        <span class="dice-num" id="dice3"></span>
-        <span class="dice-num" id="dice4"></span>
-        <span class="dice-num" id="dice5"></span>
-    </div>
-</div>
-<!-- 播放器 专辑图片自动旋转 控制开始暂停 -->
-    <div class="audio-player">
-    <audio src="audio2.mp3" id="audio" type="audio/mp3" controls autoplay> </audio>
-    <img src="album2.jpg" alt="" id="albumimage" class="album-image">
-</div>
-    
 
-<script src="script.js"></script> 
+    <!-- 摇骰子 -->
+    <div class="dice-cont">
+        <img src="dice.png" alt="骰子" class="dice-button" id="dice-img">
+        <div class="dice-text">喝酒摇骰子🎲</div>
+        <div class="dice-result">
+            <span class="dice-num" id="dice1"></span>
+            <span class="dice-num" id="dice2"></span>
+            <span class="dice-num" id="dice3"></span>
+            <span class="dice-num" id="dice4"></span>
+            <span class="dice-num" id="dice5"></span>
+        </div>
+    </div>
+
+      <script src="script.js"></script>
 </body>
 </html>
